@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "app"
+  },
+  "apps": [
+    {
+      "root": "./Areas/WriteOff/App/src/",
+      "outDir": "./Areas/WriteOff/App/dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+      "scripts": [],
+      "environmentSource": "./Areas/WriteOff/App/src/environments/environment.ts",
+      "environments": {
+        "dev": "./Areas/WriteOff/App/src/environments/environment.ts",
+        "prod": "./Areas/WriteOff/App/src/environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "./Areas/WriteOff/App/src/tsconfig.app.json"
+    },
+    {
+      "project": "./Areas/WriteOff/App/src/tsconfig.spec.json"
+    },
+    {
+      "project": "./Areas/WriteOff/App/e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
